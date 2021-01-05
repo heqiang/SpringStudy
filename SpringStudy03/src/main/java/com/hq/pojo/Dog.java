@@ -2,7 +2,7 @@ package com.hq.pojo;
 
 public class Dog {
     public  void  shout(){
-        System.out.println("旺旺");
+        System.out.println("汪汪");
 
     }
 }

@@ -2,13 +2,16 @@ package com.hq.pojo;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.lang.Nullable;
+
+import javax.annotation.Resource;
 
 public class Personal {
-    @Autowired
+    @Resource
     private Dog dog;
-    @Autowired
-    @Qualifier(value = "2")
+    @Resource
     private Cat cat;
+    @Nullable
     private String name;
 
     public Personal() {
@@ -25,6 +28,18 @@ public class Personal {
 
     public Cat getCat() {
         return cat;
+    }
+
+//    public void setDog2(Dog dog) {
+//        this.dog = dog;
+//    }
+//
+//    public void setCat1(Cat cat) {
+//        this.cat = cat;
+//    }
+//
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getName() {

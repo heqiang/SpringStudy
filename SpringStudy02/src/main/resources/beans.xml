@@ -5,6 +5,7 @@
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
    <bean  id="cat" class="com.hq.pojo.Cat"/>
+    <bean  id="cat1" class="com.hq.pojo.Cat"/>
     <bean  id="dog" class="com.hq.pojo.Dog"/>
 
 <!--
@@ -13,9 +14,9 @@
     byType
     保证bean的class唯一 并且这个bean需要和自动注入的属性的set方法的值一致
 -->
-    <bean id="personal" class="com.hq.pojo.Personal" autowire="byName">
+    <bean id="personal" class="com.hq.pojo.Personal" autowire="byType">
             <property name="name" value="hq"/>
-<!--            <property name="cat" ref="cat"/>-->
-<!--            <property name="dog" ref="dog"/>-->
+            <property name="cat" ref="cat"/>
+            <property name="dog" ref="dog"/>
     </bean>
 </beans>

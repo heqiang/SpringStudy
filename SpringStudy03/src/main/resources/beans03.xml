@@ -7,11 +7,9 @@
         http://www.springframework.org/schema/context
         https://www.springframework.org/schema/context/spring-context.xsd">
 
-    <bean  id="cat" class="com.hq.pojo.Cat"/>
-    <bean  id="2" class="com.hq.pojo.Cat"/>
-    <bean  id="dog" class="com.hq.pojo.Dog"/>
-    <bean  id="4" class="com.hq.pojo.Dog"/>
-    <bean id="personal" class="com.hq.pojo.Personal"/>
+    <bean  id="cat1" class="com.hq.pojo.Cat"/>
+    <bean  id="dog2" class="com.hq.pojo.Dog"/>
+    <bean id="personal" class="com.hq.pojo.Personal" autowire="byName"/>
 
 <!--   开启注解的支持-->
     <context:annotation-config/>
