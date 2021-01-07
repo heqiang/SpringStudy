@@ -12,6 +12,10 @@
         <module>SpringStudy01</module>
         <module>SpringStudy02</module>
         <module>SpringStudy03</module>
+        <module>SpringStudy04</module>
+        <module>SpringStudy05_javaConfig</module>
+        <module>SpringStudy06_proxy</module>
+        <module>SpringStudy07-aop</module>
     </modules>
 
     <properties>
@@ -22,6 +26,11 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
+            <version>5.2.12.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aop</artifactId>
             <version>5.2.12.RELEASE</version>
         </dependency>
     </dependencies>

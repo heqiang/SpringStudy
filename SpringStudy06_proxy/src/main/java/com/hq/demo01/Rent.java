@@ -1,0 +1,6 @@
+package com.hq.demo01;
+
+public interface Rent {
+    public void rent();
+}
+
