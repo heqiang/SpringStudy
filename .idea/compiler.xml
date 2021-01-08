@@ -12,6 +12,7 @@
         <module name="SpringStudy06_proxy" />
         <module name="SpringStudy02" />
         <module name="SpringStudy03" />
+        <module name="SpringStudy08-springMybatis" />
         <module name="SpringStudy01" />
       </profile>
     </annotationProcessing>
