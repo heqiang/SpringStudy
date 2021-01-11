@@ -23,7 +23,7 @@
 
 <!--    </aop:config>-->
 <!--  方式二 自定义类-->
-    <bean id="diyPointCut" class="com.hq.diy.DiyPointCut"></bean>
+<!--    <bean id="diyPointCut" class="com.hq.diy.DiyPointCut"></bean>-->
 
 <!--    <aop:config>-->
 <!--&lt;!&ndash;    指定自定义的类&ndash;&gt;-->

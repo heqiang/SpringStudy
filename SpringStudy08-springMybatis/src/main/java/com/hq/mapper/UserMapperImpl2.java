@@ -5,6 +5,7 @@ import org.mybatis.spring.support.SqlSessionDaoSupport;
 
 import java.util.List;
 
+//实现发方法二
 public class UserMapperImpl2 extends SqlSessionDaoSupport implements  UserMapper{
     @Override
     public List<User> userList() {

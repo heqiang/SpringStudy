@@ -17,6 +17,7 @@
         <module>SpringStudy06_proxy</module>
         <module>SpringStudy07-aop</module>
         <module>SpringStudy08-springMybatis</module>
+        <module>SpringStudy09-transaction</module>
     </modules>
 
     <properties>

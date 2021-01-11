@@ -5,6 +5,7 @@ import org.mybatis.spring.SqlSessionTemplate;
 
 import java.util.List;
 
+//实现的方法一
 public class UserMapperImpl implements UserMapper {
     //我们使用的所有操作，都是用sqlsession来执行，现在都是用SqlSessionTemplate执行
     private SqlSessionTemplate sqlSession;
@@ -12,7 +13,6 @@ public class UserMapperImpl implements UserMapper {
     public void setSqlSession(SqlSessionTemplate sqlSession) {
         this.sqlSession = sqlSession;
     }
-
 
 
     @Override

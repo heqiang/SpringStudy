@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="SpringStudy07-aop" />
         <module name="SpringStudy04" />
+        <module name="SpringStudy09-transaction" />
         <module name="SpringStudy05_javaConfig" />
         <module name="SpringStudy06_proxy" />
         <module name="SpringStudy02" />
