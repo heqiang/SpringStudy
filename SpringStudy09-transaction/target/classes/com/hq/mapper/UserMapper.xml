@@ -10,6 +10,6 @@
         insert  into user values(#{id},#{name},#{password})
     </insert>
     <delete id="deleteUser" parameterType="int">
-        delete user where id =#{uid}
+        delete from user where id = #{uid}
     </delete>
 </mapper>

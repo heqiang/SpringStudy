@@ -3,7 +3,6 @@ package com.hq.pojo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.lang.Nullable;
-
 import javax.annotation.Resource;
 
 public class Personal {
@@ -13,6 +12,7 @@ public class Personal {
     private Cat cat;
     @Nullable
     private String name;
+
 
     public Personal() {
     }

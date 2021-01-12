@@ -15,5 +15,5 @@
 <!--    <bean id="user" class="com.hq.pojo.User">-->
 <!--        <property name="name" value="hq"/>-->
 <!--    </bean>-->
-
+    <bean id="userService1" class="com.hq.service.UserService"/>
 </beans>
