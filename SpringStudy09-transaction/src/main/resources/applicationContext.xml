@@ -10,7 +10,7 @@
    <import resource="spring-dao.xml"/>
 
     <bean id="userMapper" class="com.hq.mapper.UserMapperImpl">
-        <property name="sqlsession" ref="sqlsession"/>
+        <property name="sqlsession1" ref="sqlsession1"/>
     </bean>
 
 
