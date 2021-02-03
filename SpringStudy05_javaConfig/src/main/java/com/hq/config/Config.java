@@ -12,8 +12,8 @@ import org.springframework.stereotype.Component;
 @ComponentScan("com.hq.pojo")
 public class Config {
 
-        @Bean
-        public User  MyUser(){
-            return  new User();
-        }
+    @Bean
+    public User MyUser() {
+        return new User();
+    }
 }

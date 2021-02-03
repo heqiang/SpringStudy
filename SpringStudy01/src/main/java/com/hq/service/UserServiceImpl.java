@@ -8,9 +8,10 @@ public class UserServiceImpl implements UserService {
     private UserDao userDao;
 
     public void setUserDao(MysqlUserDao userDao) {
-            this.userDao = userDao;
+        this.userDao = userDao;
     }
-    public UserDao getUserDao(){
-          return  userDao;
+
+    public UserDao getUserDao() {
+        return userDao;
     }
 }

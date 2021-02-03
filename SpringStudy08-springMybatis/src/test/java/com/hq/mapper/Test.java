@@ -11,8 +11,8 @@ import java.util.List;
 public class Test {
 
     public static void main(String[] args) {
-        ApplicationContext context =  new ClassPathXmlApplicationContext("applicationContext.xml");
-        UserMapper  userMapper = context.getBean("userMapperImpl2",UserMapper.class);
+        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        UserMapper userMapper = context.getBean("userMapperImpl2", UserMapper.class);
         List<User> userList = userMapper.userList();
         for (User user : userList) {
             System.out.println(user);

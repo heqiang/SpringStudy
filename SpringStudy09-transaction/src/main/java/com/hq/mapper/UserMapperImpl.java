@@ -5,7 +5,7 @@ import org.mybatis.spring.SqlSessionTemplate;
 
 import java.util.List;
 
-public class UserMapperImpl implements UserMapper{
+public class UserMapperImpl implements UserMapper {
     private SqlSessionTemplate sqlsession1;
 
     public void setSqlsession1(SqlSessionTemplate sqlsession) {
@@ -14,26 +14,25 @@ public class UserMapperImpl implements UserMapper{
 
     @Override
     public List<User> userList() {
-        UserMapper  userMapper =   sqlsession1.getMapper(UserMapper.class);
+        UserMapper userMapper = sqlsession1.getMapper(UserMapper.class);
 
-        return  userMapper.userList();
+        return userMapper.userList();
 
     }
 
     @Override
     public int addUser(User user) {
-        UserMapper  userMapper =   sqlsession1.getMapper(UserMapper.class);
+        UserMapper userMapper = sqlsession1.getMapper(UserMapper.class);
         userMapper.deleteUser(7);
         return userMapper.addUser(user);
     }
 
     @Override
     public int deleteUser(int id) {
-        UserMapper  userMapper =   sqlsession1.getMapper(UserMapper.class);
+        UserMapper userMapper = sqlsession1.getMapper(UserMapper.class);
         return userMapper.deleteUser(id);
 
     }
-
 
 
 }

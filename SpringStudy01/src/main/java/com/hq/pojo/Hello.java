@@ -3,14 +3,19 @@ package com.hq.pojo;
 public class Hello {
 
     private String str;
-    public Hello(){}
-    public  Hello(String str){
+
+    public Hello() {
+    }
+
+    public Hello(String str) {
         this.str = str;
     }
-    public String getStr(){
+
+    public String getStr() {
         return str;
     }
-    public void  setStr(String str){
+
+    public void setStr(String str) {
         this.str = str;
     }
 

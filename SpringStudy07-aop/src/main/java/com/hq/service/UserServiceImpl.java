@@ -1,6 +1,6 @@
 package com.hq.service;
 
-public class UserServiceImpl implements UserService{
+public class UserServiceImpl implements UserService {
     @Override
     public String add() {
         System.out.println("新增了一个用户");

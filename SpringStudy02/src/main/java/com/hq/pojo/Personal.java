@@ -8,11 +8,12 @@ public class Personal {
     public Personal() {
     }
 
-    public Personal(Dog dog, Cat cat,String name) {
+    public Personal(Dog dog, Cat cat, String name) {
         this.dog = dog;
         this.cat = cat;
         this.name = name;
     }
+
     public Dog getDog() {
         return dog;
     }

@@ -3,6 +3,7 @@ package com.hq.pojo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.lang.Nullable;
+
 import javax.annotation.Resource;
 
 public class Personal {
@@ -17,11 +18,12 @@ public class Personal {
     public Personal() {
     }
 
-    public Personal(Dog dog, Cat cat,String name) {
+    public Personal(Dog dog, Cat cat, String name) {
         this.dog = dog;
         this.cat = cat;
         this.name = name;
     }
+
     public Dog getDog() {
         return dog;
     }
@@ -30,7 +32,7 @@ public class Personal {
         return cat;
     }
 
-//    public void setDog2(Dog dog) {
+    //    public void setDog2(Dog dog) {
 //        this.dog = dog;
 //    }
 //
@@ -45,7 +47,6 @@ public class Personal {
     public String getName() {
         return name;
     }
-
 
 
     @Override

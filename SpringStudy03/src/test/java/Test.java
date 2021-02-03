@@ -6,7 +6,7 @@ public class Test {
 
     public static void main(String[] args) {
         ApplicationContext context = new ClassPathXmlApplicationContext("beans03.xml");
-        Personal  personal = context.getBean("personal",Personal.class);
+        Personal personal = context.getBean("personal", Personal.class);
         personal.getCat().shout();
         personal.getDog().shout();
     }

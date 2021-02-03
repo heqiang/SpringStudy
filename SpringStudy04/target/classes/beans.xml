@@ -7,13 +7,13 @@
         http://www.springframework.org/schema/context
         https://www.springframework.org/schema/context/spring-context.xsd">
 
-<!--指定要扫描的包 该包下面的注解就会生效-->
+    <!--指定要扫描的包 该包下面的注解就会生效-->
     <context:component-scan base-package="com.hq"/>
     <!--   开启注解的支持-->
-<!--    <context:annotation-config/>-->
+    <!--    <context:annotation-config/>-->
 
-<!--    <bean id="user" class="com.hq.pojo.User">-->
-<!--        <property name="name" value="hq"/>-->
-<!--    </bean>-->
+    <!--    <bean id="user" class="com.hq.pojo.User">-->
+    <!--        <property name="name" value="hq"/>-->
+    <!--    </bean>-->
     <bean id="userService1" class="com.hq.service.UserService"/>
 </beans>

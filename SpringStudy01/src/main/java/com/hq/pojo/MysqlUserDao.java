@@ -1,6 +1,6 @@
 package com.hq.pojo;
 
-public class MysqlUserDao implements  UserDao {
+public class MysqlUserDao implements UserDao {
 
     @Override
     public void getDb() {

@@ -9,33 +9,33 @@
        ">
 
 
-   <bean id="userService" class="com.hq.service.UserServiceImpl"/>
+    <bean id="userService" class="com.hq.service.UserServiceImpl"/>
     <bean id="beforeLog" class="com.hq.log.BeforeLog"/>
     <bean id="afterLog" class="com.hq.log.AfterLog"/>
-<!--  方式一-->
-<!-- 配置aop：需要导入aop的约束-->
-<!--    <aop:config>-->
-<!--&lt;!&ndash;    execution(要执行的位置！******)    &ndash;&gt;-->
-<!--        <aop:pointcut id="pointcut" expression="execution(* com.hq.service.UserServiceImpl.*(..))"/>-->
-<!--&lt;!&ndash;  执行环绕&ndash;&gt;-->
-<!--        <aop:advisor advice-ref="beforeLog" pointcut-ref="pointcut"/>-->
-<!--&lt;!&ndash;        <aop:advisor advice-ref="afterLog" pointcut-ref="pointcut"/>&ndash;&gt;-->
+    <!--  方式一-->
+    <!-- 配置aop：需要导入aop的约束-->
+    <!--    <aop:config>-->
+    <!--&lt;!&ndash;    execution(要执行的位置！******)    &ndash;&gt;-->
+    <!--        <aop:pointcut id="pointcut" expression="execution(* com.hq.service.UserServiceImpl.*(..))"/>-->
+    <!--&lt;!&ndash;  执行环绕&ndash;&gt;-->
+    <!--        <aop:advisor advice-ref="beforeLog" pointcut-ref="pointcut"/>-->
+    <!--&lt;!&ndash;        <aop:advisor advice-ref="afterLog" pointcut-ref="pointcut"/>&ndash;&gt;-->
 
-<!--    </aop:config>-->
-<!--  方式二 自定义类-->
-<!--    <bean id="diyPointCut" class="com.hq.diy.DiyPointCut"></bean>-->
+    <!--    </aop:config>-->
+    <!--  方式二 自定义类-->
+    <!--    <bean id="diyPointCut" class="com.hq.diy.DiyPointCut"></bean>-->
 
-<!--    <aop:config>-->
-<!--&lt;!&ndash;    指定自定义的类&ndash;&gt;-->
-<!--        <aop:aspect ref="diyPointCut">-->
-<!--            <aop:pointcut id="pointcut" expression="execution(* com.hq.service.UserServiceImpl.*(..))"/>-->
-<!--            <aop:after method="after" pointcut-ref="pointcut"/>-->
-<!--            <aop:before method="before" pointcut-ref="pointcut"/>-->
-<!--        </aop:aspect>-->
-<!--    </aop:config>-->
+    <!--    <aop:config>-->
+    <!--&lt;!&ndash;    指定自定义的类&ndash;&gt;-->
+    <!--        <aop:aspect ref="diyPointCut">-->
+    <!--            <aop:pointcut id="pointcut" expression="execution(* com.hq.service.UserServiceImpl.*(..))"/>-->
+    <!--            <aop:after method="after" pointcut-ref="pointcut"/>-->
+    <!--            <aop:before method="before" pointcut-ref="pointcut"/>-->
+    <!--        </aop:aspect>-->
+    <!--    </aop:config>-->
 
-<!--  方式三-->
+    <!--  方式三-->
     <bean id="annotationPoint" class="com.hq.diy.AnnotationPoint"/>
-<!-- 注解支持-->
-   <aop:aspectj-autoproxy/>
+    <!-- 注解支持-->
+    <aop:aspectj-autoproxy/>
 </beans>

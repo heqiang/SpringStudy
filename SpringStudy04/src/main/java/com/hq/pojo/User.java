@@ -9,14 +9,15 @@ import org.springframework.stereotype.Component;
 public class User {
     //相当于   <property name="name" value="hq"/>
 //    @Value("hq")
-    private String name ;
+    private String name;
 
     public String getName() {
         return name;
     }
+
     @Value("hq")
-    public  void  setName(String name){
-        this.name=name;
+    public void setName(String name) {
+        this.name = name;
     }
 
 }

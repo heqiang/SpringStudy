@@ -1,7 +1,7 @@
 package com.hq.pojo;
 
 public class Dog {
-    public  void  shout(){
+    public void shout() {
         System.out.println("汪汪");
 
     }

@@ -6,14 +6,15 @@ import org.springframework.stereotype.Component;
 
 public class User {
 
-    private String name ;
+    private String name;
 
     public String getName() {
         return name;
     }
+
     @Value("注入成功")
-    public  void  setName(String name){
-        this.name=name;
+    public void setName(String name) {
+        this.name = name;
     }
 
     @Override

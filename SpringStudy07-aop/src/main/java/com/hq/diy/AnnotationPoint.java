@@ -7,22 +7,24 @@ import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 
 /*
-* 通过注解的方式实现aop
-*
-* */
+ * 通过注解的方式实现aop
+ *
+ * */
 //表示这个类是一个切面
 @Aspect
 public class AnnotationPoint {
     @Before("execution(* com.hq.service.UserServiceImpl.*(..))")
-    public  void  before(){
+    public void before() {
         System.out.println("========方法执行前");
     }
+
     @After("execution(* com.hq.service.UserServiceImpl.*(..))")
-    public void  after(){
+    public void after() {
         System.out.println("========方法执行后");
     }
+
     @Around("execution(* com.hq.service.UserServiceImpl.*(..))")
-    public  void around(ProceedingJoinPoint joinPoint) throws Throwable {
+    public void around(ProceedingJoinPoint joinPoint) throws Throwable {
         System.out.println("环绕前");
         //执行方法
         Object p = joinPoint.proceed();
